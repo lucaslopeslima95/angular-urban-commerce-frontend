@@ -1,3 +1,4 @@
+import { CarrinhoService } from './../../carrinho.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(public carrinhoService:CarrinhoService){
+      
+  }
 }
