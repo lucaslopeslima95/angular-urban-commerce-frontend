@@ -1,4 +1,4 @@
-import { AppRoutingModule } from './../app-routing.module';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProdutosRoutingModule } from './produtos-routing.module';
@@ -15,8 +15,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ProdutosRoutingModule,
-    FormsModule,
-    AppRoutingModule
+    FormsModule
+    
   ]
 })
 export class ProdutosModule { }
