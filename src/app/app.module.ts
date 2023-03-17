@@ -8,13 +8,16 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule} from "@angular/material/snack-bar";
+import { BarraPesquisaComponent } from './components/barra-pesquisa/barra-pesquisa.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    BarraPesquisaComponent
   ],
   imports: [
     BrowserModule,

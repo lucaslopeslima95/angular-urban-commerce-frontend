@@ -8,7 +8,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  constructor(public carrinhoService:CarrinhoService){
-      
-  }
+  constructor(public carrinhoService:CarrinhoService){}
 }

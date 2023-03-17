@@ -17,7 +17,9 @@ export class ContatoComponent {
   })
   constructor(
     private formsBuilder:FormBuilder
-  ){
-
+  ){}
+  eviarFormulario(){
+    alert("Formulario Enviado");
+    this.formContato.reset();
   }
 }
