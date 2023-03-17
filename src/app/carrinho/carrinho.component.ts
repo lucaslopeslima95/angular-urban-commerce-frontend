@@ -9,8 +9,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./carrinho.component.css']
 })
 export class CarrinhoComponent implements OnInit{
+
   itensDoCarrinho:IProdutoCarrinho[]=[];
+
   total = 0;
+  
   constructor(
     public carrinhoService:CarrinhoService,
     private router:Router){}
