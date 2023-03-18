@@ -88,5 +88,8 @@ textarea {
 .invalid:focus {
 	border-color: red;
 }
-html, body { height: 100%; }
+html, body {
+	 height: 100%;
+	 background-color: #2A2D2E;
+ }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -10,12 +10,19 @@
 
 .product-list__card {
     box-sizing: border-box;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border:1px solid #85afc9;
     flex: 0 1 270px;
-    height: 450px;
-    background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;       
+    height: 30rem;
+    background-color: #2D2D37;
+    margin-bottom: 1rem;
+    box-shadow: rgba(216, 214, 207, 0.781) 0px 2px 8px 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .product-list__card:hover {
@@ -33,10 +40,15 @@
 }
 
 .product-list__card img {
-    height: 250px;
-    width: 250px;    
+    height: 15rem;
+    width: 15rem;
     display: block;
-    border-radius: 4px;
+    border:1px solid #85afc9;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .product-item__name {
@@ -50,7 +62,7 @@
     font-weight: bold;
 }
 
-.product-item__price-deion {
+.product-item__price-decription {
     color: var(--gray);
     font-size: 12px;
     font-weight: bold;
@@ -62,6 +74,11 @@
     color: white;
     font-size: 20px;
     padding: 6px 12px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .product-item__buy-button:hover {
