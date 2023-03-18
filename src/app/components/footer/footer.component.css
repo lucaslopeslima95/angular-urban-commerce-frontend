@@ -1,5 +1,5 @@
 .footer{
-    background-color:  var(--light-gray);
+    background-color:  #b6b3b3;
     color: var(--gray);
     font-size: 18px;
 }
@@ -12,16 +12,17 @@
 .footer__copyright{
     text-align: center;
     margin-top: 20px;
-    background-color: var(--light-gray-2);
     font-weight: bold;
     padding: 20px;
     color: var(--gray);
+    background-color:  #b6b3b3;
 }
 .footer__title{
     font-size: 20px;
     font-weight: 100;
     color: var(--blue);
     margin-bottom: 5px;
+    letter-spacing: 1;
 }
 .footer__about-text{
     width: 400px;
