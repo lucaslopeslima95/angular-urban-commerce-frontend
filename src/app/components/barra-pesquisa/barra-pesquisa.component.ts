@@ -1,4 +1,4 @@
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class BarraPesquisaComponent {
 
   descricao:string="";
+
   constructor(private router:Router){}
   pesquisar(){
     if(this.descricao){

@@ -1,5 +1,5 @@
 import { ActivatedRoute } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { IProduto } from '../produtos';
 import { ProdutoService } from '../produto.service';
 
@@ -8,7 +8,7 @@ import { ProdutoService } from '../produto.service';
   templateUrl: './produtos.component.html',
   styleUrls: ['./produtos.component.css']
 })
-export class ProdutosComponent implements OnInit{
+export class ProdutosComponent implements OnInit,OnChanges{
   produtos:IProduto[]|undefined;
 
   constructor(
@@ -16,16 +16,22 @@ export class ProdutosComponent implements OnInit{
     private route: ActivatedRoute
     ){
   }
+  ngOnChanges(changes: SimpleChanges): void {
+    if(changes){
+      this.searchProducts();
+    }
+  }
   searchProducts():void{
     const produtos = this.productService.getProdutos();
-    /**this.route.queryParamMap.subscribe(params =>{
+    this.route.queryParamMap.subscribe(params =>{
       const descricao = params.get("descricao")?.toLocaleLowerCase();
 
     if(descricao){
-          this.produtos = produtos.filter(produto => produto.descricao.toLocaleLowerCase().includes(descricao));
+          produtos.subscribe(p => this.produtos = p.filter(
+            produto => produto.descricao.toLocaleLowerCase().includes(descricao)));
           return;
       }
-    })*/
+    })
     produtos.subscribe(p=>this.produtos=p);
   }
   ngOnInit(): void {
