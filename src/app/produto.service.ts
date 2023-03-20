@@ -11,7 +11,7 @@ export class ProdutoService {
 
  produto:IProdutoCarrinho = {} as IProdutoCarrinho;
 
-  url:string = 'http://localhost:8080';
+  url:string = 'https://java-urban-commerce-backend-production.up.railway.app';
 
   constructor(private httpClient:HttpClient) {}
 
