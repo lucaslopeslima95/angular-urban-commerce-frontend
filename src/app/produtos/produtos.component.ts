@@ -16,8 +16,7 @@ export class ProdutosComponent implements OnInit{
     private route: ActivatedRoute
     ){
   }
-  
-  ngOnInit(): void {
+  searchProducts():void{
     const produtos = this.productService.getProdutos();
     /**this.route.queryParamMap.subscribe(params =>{
       const descricao = params.get("descricao")?.toLocaleLowerCase();
@@ -28,6 +27,9 @@ export class ProdutosComponent implements OnInit{
       }
     })*/
     produtos.subscribe(p=>this.produtos=p);
+  }
+  ngOnInit(): void {
+    this.searchProducts();
   }
 
 
