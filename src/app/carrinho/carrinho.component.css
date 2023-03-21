@@ -1,6 +1,6 @@
 .cart-title {
     font-size: 44px;
-    color: var(--gray);
+    color: antiquewhite;
     font-weight: 700;
     padding: 8px 0;
 }
@@ -14,6 +14,7 @@ li {
     height: 100px;
     align-items: center;
     justify-content: space-between;
+    color: antiquewhite;
 }
 
 img {

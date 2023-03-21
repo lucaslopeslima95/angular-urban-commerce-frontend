@@ -11,10 +11,11 @@ export class BarraPesquisaComponent {
   descricao:string="";
 
   constructor(private router:Router){}
+
   pesquisar(){
     if(this.descricao){
       this.router.navigate(["produtos"],{queryParams:{descricao:this.descricao}});
     }
-    this.router.navigate(["produtos"]);
+    this.router.navigate(["/produtos"]);
   }
 }

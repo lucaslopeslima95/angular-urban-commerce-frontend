@@ -22,5 +22,6 @@ export class HeaderComponent {
     gotToContact():void{
       this.router.navigate(["/contato"]);
     }
+    
 
 }

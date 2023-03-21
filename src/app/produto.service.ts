@@ -1,4 +1,4 @@
-import { IProduto, IProdutoCarrinho } from 'src/app/produtos';
+/**import { IProduto, IProdutoCarrinho } from 'src/app/produtos';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -26,3 +26,4 @@ export class ProdutoService {
     return this.httpClient.get<IProdutoCarrinho[]>(this.url+"/produtos");
   }
 }
+*/

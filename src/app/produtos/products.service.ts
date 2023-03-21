@@ -1,18 +1,30 @@
 import { Injectable } from '@angular/core';
-import { IProduto, produtos } from '../produtos';
+import { IProduto, IProdutoCarrinho } from '../produtos';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
-  produtos:IProduto[] = produtos;
-  constructor() { }
+  
+  constructor(private httpClient:HttpClient) {}
 
-  getAll(){
-    return this.produtos;
+  produto:IProdutoCarrinho = {} as IProdutoCarrinho;
+
+  listprodutos:IProdutoCarrinho[] = {} as IProdutoCarrinho[];
+
+  url:string = 'https://java-urban-commerce-backend-production.up.railway.app';
+  
+  getAll():Observable<IProduto[]>{
+    this.httpClient.get<IProdutoCarrinho[]>(this.url+"/produtos").subscribe(p => this.listprodutos = p);
+    return this.httpClient.get<IProdutoCarrinho[]>(this.url+"/produtos");
   }
   
-  getOne(produtoId : number){
-    return this.produtos.find(produto => produto.id === produtoId);
+  getOne(produtoId : string | null ){
+    
+    this.listprodutos.find(produto => produto.id === produtoId)
+    
+    return this.listprodutos.find(produto => produto.id === produtoId);
   }
 }
