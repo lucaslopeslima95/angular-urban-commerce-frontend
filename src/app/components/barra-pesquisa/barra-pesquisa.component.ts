@@ -8,14 +8,16 @@ import { Component } from '@angular/core';
 })
 export class BarraPesquisaComponent {
 
-  descricao:string="";
+  descricao:string | undefined ="";
 
   constructor(private router:Router){}
 
   pesquisar(){
+   
     if(this.descricao){
       this.router.navigate(["produtos"],{queryParams:{descricao:this.descricao}});
+    }else{
+      this.router.navigate(["produtos"]);
     }
-    this.router.navigate(["/produtos"]);
   }
 }
