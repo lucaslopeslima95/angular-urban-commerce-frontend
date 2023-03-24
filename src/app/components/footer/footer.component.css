@@ -35,3 +35,26 @@
 footer li{
     margin: 10px 0;
 }
+
+@media screen and (max-width: 576px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__about-text{
+        width: 100%;
+        text-align: justify;
+    }
+    .footer__title{
+        font-size: 20px;
+        font-weight: 100;
+        color: var(--blue);
+        margin-bottom: 5px;
+        width: 80%;
+    }
+    ul>li{
+        max-width: 80%;
+        word-wrap: unset;
+    }
+
+}

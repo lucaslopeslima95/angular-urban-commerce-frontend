@@ -70,3 +70,19 @@ li>a{
     justify-content: center;
     cursor: pointer;
 }
+@media screen and (max-width: 576px) {
+    .main-header {    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+        margin-bottom: 1.5rem;
+        
+    }
+    .main-header__menu ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
