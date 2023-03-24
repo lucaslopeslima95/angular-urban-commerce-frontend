@@ -9,9 +9,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  showNetWorks:boolean = false;
   constructor(
     public carrinhoService:CarrinhoService,
-    private router:Router){}
+    private router:Router){
+      if(window.innerWidth > 600){
+          document.getElementById("redes")?.remove;
+      }
+    }
 
     goToProducts():void{
          this.router.navigate(["/produtos"]);
@@ -22,6 +27,8 @@ export class HeaderComponent {
     gotToContact():void{
       this.router.navigate(["/contato"]);
     }
-    
+    dropdown(){
+      this.showNetWorks = !this.showNetWorks;
+    }
 
 }

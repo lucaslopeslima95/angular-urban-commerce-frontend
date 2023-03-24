@@ -84,5 +84,19 @@ li>a{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin:2%;
     }
+    .main-header__menu ul ul a{
+        position: relative;
+    }
+    .main-header__menu ul ul li{
+        position: absolute;
+        display: none;
+    }
+    
+}
+
+.mobile{
+    display: block;
+    
 }

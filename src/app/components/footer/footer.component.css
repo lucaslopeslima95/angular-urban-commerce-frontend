@@ -52,7 +52,7 @@ footer li{
         margin-bottom: 5px;
         width: 80%;
     }
-    ul>li{
+    li{
         max-width: 80%;
         word-wrap: unset;
     }
