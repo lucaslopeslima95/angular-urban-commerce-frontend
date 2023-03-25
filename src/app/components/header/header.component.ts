@@ -20,7 +20,7 @@ export class HeaderComponent {
     }
 
     goToProducts():void{
-         this.router.navigate(["/produtos"]);
+         this.router.navigate([""]);
     }
     goToCart():void{
       this.router.navigate(["/carrinho"])
