@@ -6,8 +6,7 @@
 .search-form input{
     box-sizing: border-box;
     height: 2rem;
-    width: 2rem;
-    flex:1;
+    width: 25rem;
     background-color: var(--light-gray);
     color: var(--gray);
     border: none;

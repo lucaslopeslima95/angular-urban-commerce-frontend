@@ -12,6 +12,7 @@ import { BarraPesquisaComponent } from './components/barra-pesquisa/barra-pesqui
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

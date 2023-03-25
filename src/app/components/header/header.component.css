@@ -10,7 +10,8 @@
 }
 
 .main-header__title {    
-    letter-spacing: -1.5px;    
+    letter-spacing: -1.5px;
+    justify-content: baseline;    
 }
 
 .main-header__title--blue {
@@ -27,7 +28,7 @@
 
 .main-header__menu ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: row;
 }
 
@@ -70,7 +71,7 @@ li>a{
     justify-content: center;
     cursor: pointer;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 762px) {
     .main-header {    
         display: flex;
         flex-direction: column;
@@ -86,17 +87,7 @@ li>a{
         flex-direction: column;
         margin:2%;
     }
-    .main-header__menu ul ul a{
-        position: relative;
-    }
-    .main-header__menu ul ul li{
-        position: absolute;
-        display: none;
-    }
     
 }
 
-.mobile{
-    display: block;
-    
-}
+

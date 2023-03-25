@@ -14,7 +14,8 @@ export class HeaderComponent {
     public carrinhoService:CarrinhoService,
     private router:Router){
       if(window.innerWidth > 600){
-          document.getElementById("redes")?.remove;
+          document.getElementById("redes")?.remove
+
       }
     }
 
@@ -26,9 +27,6 @@ export class HeaderComponent {
     }
     gotToContact():void{
       this.router.navigate(["/contato"]);
-    }
-    dropdown(){
-      this.showNetWorks = !this.showNetWorks;
     }
 
 }
