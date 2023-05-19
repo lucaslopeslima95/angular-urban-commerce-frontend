@@ -45,3 +45,7 @@
 .contact-form button:disabled:hover {
     filter: none;
 }
+
+address{
+    width: 100%;
+}

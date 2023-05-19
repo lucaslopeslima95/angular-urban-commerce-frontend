@@ -61,7 +61,7 @@
         Esse campo precisa ser preenchido.
       </small>
     </div>
-    <button [disabled]="formContato.invalid" type="submit">Enviar</button>
+    <button [disabled]="formContato.invalid" type="submit" (click)="eviarFormulario()">Enviar</button>
 
   </form>
   <address>
