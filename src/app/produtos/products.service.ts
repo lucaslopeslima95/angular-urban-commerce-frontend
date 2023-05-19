@@ -14,7 +14,7 @@ export class ProductsService {
 
   listprodutos:IProdutoCarrinho[] = {} as IProdutoCarrinho[];
 
-  url:string = 'https://java-urban-commerce-backend-production.up.railway.app';
+  url:string = 'https://java-urban-commerce-backend-production-149a.up.railway.app';
   
   getAll():Observable<IProduto[]>{
     this.httpClient.get<IProdutoCarrinho[]>(this.url+"/produtos").subscribe(p => this.listprodutos = p);
